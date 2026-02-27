@@ -71,11 +71,11 @@ It requires:
 
 Official versions available on Zenodo:
 
-https://zenodo.org/records/18801876 rus version
+https://zenodo.org/records/18801876 rus version,
 https://zenodo.org/records/18768467 rus Engineering Volume
 
-https://zenodo.org/records/18791426 ENG version, 
-https://zenodo.org/records/18791504 eng Engineering Volume
+https://zenodo.org/records/18791426 ENG version,
+https://zenodo.org/records/18791504 eng engineering Volume
 ---
 
 ## Contact
