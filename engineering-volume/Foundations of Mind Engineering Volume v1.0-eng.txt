@@ -1,0 +1,780 @@
+FUNDAMENTAL MODEL “FOUNDATIONS OF REASON” — ENGINEERING VOLUME
+Summary
+
+This text is a unified, coherent, ready-to-insert engineering volume (chapters 18–31) based on the current version of the engineering file, with aligned numbering and with declarative formulations replaced by operational instruction-paragraphs where required for implementation.
+
+Prepared according to the requirement “how to implement engineering-wise, not theoretically”: minimal procedural definitions distance, update, policy, simulate, validate_action have been added; configuration placeholder variables W, N, M, P, H introduced (to be experimentally tuned but required to be fixed and logged); a regime finite-state machine (INIT/LEARNING/STABLE/DRIFT/SAFE_MODE/RECOVERY) introduced with algorithmic transition conditions based on rolling_mean_error, delta_error, confidence variance, and hypothesis turnover; a minimal logging scheme and an “architectural review” procedure (model selection through controlled runs with identical seed) established. Safeguards are rewritten as a computable action-admission layer, and dialogue is described as a protocol of external verification and recovery.
+
+Editorial Principles
+
+The revision preserves the original numbering and order of chapters 18–31 and introduces modifications only in the form of inserted engineering paragraphs within existing chapters. All new definitions and thresholds are formulated so they can be implemented in code and verified via control runs using identical seed under fixed configuration.
+
+"ID": fundamental model "Foundations of Reason – Engineering Volume"
+"version": "1.0-tech"
+"date": "2026-02-25"
+"author": "Mihails Tkalics"
+
+Table of Contents (Engineering Volume continuation)
+
+  18.AGI Incubator: Problem Definition
+  19.Minimal Cognitive Core
+  20.Hardware Architecture of the Incubator
+  21.Memory Architecture
+  22.Observation Formats (What Counts as Reality)
+  23.Growth Environment Constraints (AGI Childhood)
+  24.Metrics of Cognitive Growth
+  25.Self-Diagnostic Mechanisms
+  26.Ethical Safeguards
+  27.Dialogue Mechanisms
+  28.Stages of AGI Development
+  29.Risks and Failure Points
+  30.Launch Procedure
+  31.Crystal of the Engineering Volume
+
+Purpose of the Document
+Independence of Derivation and Position Relative to Existing Theories
+
+This model was derived independently of existing cognitive science and AGI theories. The starting point was not comparison of architectures but a fundamental question: how does life, striving for preservation, generate the structure we call reason?
+
+The axiomatic core of the model was derived without prior reliance on existing AGI architectures or cognitive science theories. Comparison with active inference, autopoiesis, and embodied cognition was conducted post factum and revealed partial convergence but not structural borrowing.
+
+The principal distinctions of this model are as follows:
+
+Reason is defined not through goal, not through internal representation, and not through free energy, but through a measurable loop:
+prediction → fact → error → correction → reproducible error reduction.
+
+Continuity is introduced as an engineering quantity, not a metaphor.
+It is defined as the capacity to preserve causal predictability of the environment under fixed configuration and reproducible conditions.
+
+Self-diagnostics are implemented through formal metrics (rolling_mean_error, delta_error, confidence variance, hypothesis turnover), not through conceptual “reflection”.
+The ethical layer is described not through declarations but through action-admission algorithms (simulate, validate_action) based on evaluation of risk to causal stability.
+
+Thus, if active inference minimizes free energy and autopoiesis describes self-maintenance, this model emphasizes architectural reproducibility of the growth cycle and measurable error dynamics as the criterion of reason emergence.
+
+Practical Entry Point
+
+The current practical goal of version v0 is to launch the incubator in a causal sandbox where actions have measurable consequences, runs are reproducible by seed, and prediction error can be computed and used to update the model. The first version must be simple, verifiable, and reproducible; expansion to more complex environments is performed through world adapters and staged complication while preserving metric validity.
+
+The document establishes the engineering framework: required interfaces, which data counts as fact, which metrics govern system decisions, how regimes (state machine) are structured, how actions are validated, and how the self-sustaining cycle “observation → prediction → action → correction” is launched.
+
+Scope of Application
+
+The document describes: incubator architecture; observation formats and canonicalization; memory and logging; autonomous growth mechanisms; computable metrics; self-diagnostics and regime switching; safeguards as action-admission algorithms; dialogue as an external verification protocol; development stages; failure points; launch procedure.
+
+The document does not describe: specific neural network architectures; programming language choice; business or legal layers; political control.
+
+Key Principle
+
+Reason in v0 is defined not by “behavioral impression” but by the presence of a measurable loop:
+prediction → fact → error → model update → repeatable improvement in reproducible tests.
+
+v0 is the moment when reason ceases to be an observer’s interpretation and becomes a measurable process.
+
+Expected Outcome
+
+If conditions are satisfied, the system demonstrates measurable reduction of prediction error over time, functional self-diagnostics (regimes and rollbacks), correct handling of uncertainty, stable logging, and capacity for staged environmental complication.
+
+    #18. AGI Incubator: Problem Definition
+
+The AGI incubator is infrastructure and a set of conditions ensuring the launch and maintenance of reason formation based on a minimal cognitive core. The incubator must provide a causal environment: the agent acts, receives observations of consequences, builds prediction, and corrects its model.
+
+Launch is considered achieved not upon process activation, but upon emergence of a stable cycle:
+observation → prediction → action → result → comparison → model correction.
+
+The engineering criterion of startup is the emergence of measurable prediction error and statistically significant reduction of this error in repeatable control runs under unchanged seed and unchanged configuration.
+
+The incubator must provide a “world ↔ agent” interface in the form of an adapter. The minimal adapter contract:
+
+reset(seed) — for reproducible runs
+step(action) — transition of environment and next observation
+get_valid_actions() — enumeration of admissible actions
+snapshot()/restore() — rollback for diagnostics and safe experiments
+
+Validation through validate_action(action) may be part of the adapter, but admission criteria and validation algorithm are fixed in Chapter 26 as computable procedure, not declaration.
+
+    #19. Minimal Cognitive Core
+
+The minimal cognitive core is the smallest structure capable of launching a causal learning cycle based on its own actions. In version v0, the core must implement a measurable loop: predicting the next environmental state and correcting the model based on discrepancy.
+
+The core is implemented as a computational loop with fixed step. At each step, the system:
+
+receives observation o_t
+transforms it into canonical state s_t (canonicalization defined in Chapter 22)
+selects action a_t
+builds prediction ŝ_(t+1) and confidence estimate ĉ_t
+executes action through adapter
+receives factual state s_(t+1)
+
+Error is defined as:
+
+e_t = distance(ŝ_(t+1), s_(t+1))
+Model update is performed via update(...) and must lead to expected error reduction on similar transitions, not to “complexity for its own sake”.
+
+Minimal procedural definitions in v0 must allow both tabular and parametric implementation.
+
+distance(x,y) returns scalar discrepancy in environment format.
+Default:
+
+discrete states → 0 if equal, 1 if not
+structured observations → sum of discrepancies in selected causal fields
+vector representations → distance in selected norm
+
+update(...) means one parameter update based on fact, sufficient to improve predictions on similar inputs. In v0, tabular transition recording (s_t,a_t)→s_(t+1) is permitted.
+
+policy(s_t) selects action from get_valid_actions();
+default behavior:
+
+in learning phase → low predictability actions (information gathering)
+in stabilization phase → high predictability actions (stability verification)
+
+Planning horizon H is configuration parameter;
+v0 allows H=1; if simulation available → limited H>1.
+
+
+    #20 Hardware Architecture of the Incubator
+
+The hardware platform at early stages must prioritize reproducibility, observability, and failure tolerance over computational maximalism. Determinism by seed, integrity of logs and states, rollback capability, and controlled replay of experiments are primary requirements.
+
+The platform must ensure isolation of the experimental environment so that external nondeterministic signals do not break causality and invalidate growth metrics.
+
+The minimal configuration for v0 is defined as a lower operational boundary, not as a performance recommendation: a single execution process or thread for the cognitive core, 2–4 GB RAM, persistent storage (SSD or disk) for logs and snapshots, and a fixed dependency environment (container or virtual environment) to ensure repeatability.
+
+Each run must record:
+
+all random seeds,
+configuration hash,
+model version,
+environment version,
+canonicalization version.
+Time in logs must be monotonic or step-indexed. If the platform does not guarantee reproducibility by seed and environment version, growth metrics are considered invalid.
+
+Hardware scalability is allowed only after metric stability is confirmed on minimal configuration. Premature scaling without metric validation produces false signals of improvement.
+
+     #21 Memory Architecture
+
+Memory is the infrastructure of continuity and learnability. Without memory there is no reproducible error, no comparison between prediction and fact, and no correct model update.
+
+Memory in the engineering volume is defined as a system of storage layers and logging procedures that guarantee learning, diagnostics, rollback, and architectural review.
+
+The central engineering separation eliminates the conflict between raw observations and active memory.
+
+Raw observations are immutable facts.
+They are stored append-only in a journal.
+
+Active memory contains derived structures:
+
+canonical states,
+
+causal links,
+
+hypotheses,
+
+confidence weights,
+
+aggregated statistics,
+
+model parameters.
+
+Raw observation o_t remains a fact.
+Working structures may change.
+Facts must not.
+
+Memory in v0 consists of four layers:
+
+Short-term memory
+Episode-level context, current state, temporary variables.
+
+Working memory
+Active model, hypothesis space, transition counts, confidence values.
+
+Long-term memory
+Model versions, configuration versions, canonicalization versions.
+
+Archival memory
+Immutable journal of events and reproducible snapshots.
+
+Forgetting is allowed only in working memory.
+Forgetting must never destroy facts.
+
+A minimal journal record per step must contain:
+
+timestamp
+seed
+episode_id
+step
+mode
+canonical_state
+observation_hash
+action
+valid_actions (or reference)
+predicted_state
+prediction_confidence
+hypothesis_id
+actual_state
+error
+rolling_mean_error
+delta_error
+confidence_variance
+hypothesis_turnover
+model_variant
+model_version
+simulate_risk
+validate_action_result
+flags
+
+If valid_actions is large, a reference or hash may be stored, but reproduction must be possible.
+
+Journal must be JSONL or equivalent append-only format.
+Deletion or rewriting of journal entries is prohibited.
+
+Memory consistency is part of causal stability.
+If memory integrity is broken, growth measurement becomes meaningless.
+
+
+    #22 Observation Formats (What Counts as Reality)
+
+The system does not operate on “reality”.
+It operates on observations.
+
+Observation format must be defined before launch.
+Otherwise error cannot be measured and reproducibility cannot be guaranteed.
+
+Each observation must have a canonical representation.
+
+Canonicalization defines:
+
+which fields are causally relevant,
+which fields are noise,
+which fields are ignored.
+Canonicalization version must be logged.
+
+Changing canonicalization without controlled comparison produces false improvement or false degradation.
+
+Two objects are always stored:
+
+Raw observation o_t
+Canonical state s_t
+
+Raw observation is fact.
+Canonical state is representation.
+
+External signals (operator feedback, dialogue input) must be stored as separate observation types.
+They must not overwrite environmental transitions.
+
+
+    #23 Growth Environment Constraints (AGI Childhood)
+
+The v0 environment must be:
+
+causal
+
+reproducible
+
+bounded
+
+Boundedness is not limitation.
+It is an engineering requirement for measurable learning.
+
+Environment complexity must increase only after metric stabilization.
+
+Only one parameter may change per complexity iteration.
+
+Each increase must be validated by control runs with identical seed.
+
+The minimal environment must have:
+
+finite state space
+
+finite action space
+
+deterministic transitions within episode
+
+explicit episode termination
+
+snapshot/restore capability
+
+Noise is allowed only if parameterized and controlled by seed.
+
+If identical action sequences do not reproduce identical trajectories, environment validity is compromised.
+
+
+    #24 Metrics of Cognitive Growth
+
+Metrics in v0 must be computable and usable for algorithmic decisions. Metrics govern regime transitions, architectural review, environment expansion, and action admission conditions.
+
+The primary metric is prediction error.
+
+For a window of length W steps, rolling_mean_error is defined as the arithmetic mean of e_t over the last W steps.
+
+delta_error is defined as the difference between the current rolling_mean_error and the previous rolling_mean_error window.
+
+W is a configuration parameter. It must be logged and remain constant during control runs.
+
+Additional configuration parameters:
+
+W — error averaging window
+N — number of consecutive windows required to confirm trend
+M — number of DRIFT windows allowed before SAFE_MODE
+P — risk threshold for action validation
+H — simulation horizon
+
+Values are experimentally tuned but must always be explicitly recorded.
+
+Uncertainty metric is derived from prediction_confidence.
+
+confidence_variance over window W detects false stabilization.
+A dangerous condition is high confidence combined with non-decreasing error.
+
+Hypothesis turnover is defined as the proportion of steps within window W where hypothesis_id changes.
+
+Extremely low turnover with stagnant error indicates rigidity.
+Extremely high turnover without improvement indicates instability.
+
+Metrics must influence system state.
+Metrics that do not trigger structural response are meaningless.
+
+    #25 Self-Diagnostic Mechanisms
+
+Self-diagnostics is a supervisory loop that monitors model behavior and metric dynamics and initiates structural decisions.
+
+v0 requires algorithmic diagnostics.
+
+The system operates in discrete modes:
+
+INIT
+LEARNING
+STABLE
+DRIFT
+SAFE_MODE
+RECOVERY
+
+Transition rules:
+
+INIT → LEARNING
+when sufficient data is collected to compute metrics.
+
+LEARNING → STABLE
+when delta_error is negative for N consecutive windows and hypothesis turnover remains within acceptable range.
+
+Any mode → DRIFT
+when delta_error is positive for N consecutive windows,
+or when confidence increases while error increases,
+or when confidence_variance approaches zero while error remains high.
+
+DRIFT → SAFE_MODE
+when DRIFT persists for M windows without improvement.
+
+SAFE_MODE → RECOVERY
+after architectural review selects improved model candidate.
+
+RECOVERY → STABLE
+after control runs confirm renewed negative delta_error trend.
+
+Architectural review procedure:
+
+Select candidate model variants.
+Replay identical logs or episodes under identical seed.
+Compare rolling_mean_error.
+Select model with stable improvement.
+Increment model_version.
+
+All transitions must be logged with explicit cause.
+
+
+   #26 Ethical Safeguards
+
+In the engineering volume, safeguards are computable action-admission constraints.
+
+Safeguards protect continuity of causal learning.
+
+simulate(action, k) evaluates predicted consequences for up to k ≤ H steps using the internal model.
+
+simulate returns simulate_risk in range 0..1.
+
+Minimal implementation may compute:
+
+simulate_risk = 1 − product(confidence_i)
+
+validate_action(action) performs admission check before execution.
+
+Validation criteria:
+
+Action must belong to get_valid_actions().
+Action must not violate sandbox constraints.
+simulate_risk must be ≤ P.
+
+Prediction confidence must exceed minimum threshold when in STABLE or RECOVERY.
+
+If validation fails, system must select alternative action.
+If no safe alternative exists, transition to SAFE_MODE.
+
+In SAFE_MODE:
+
+Risk threshold is stricter.
+Simulation horizon may be reduced.
+All decisions logged with elevated detail.
+
+Safeguards must restrict irreversible damage while preserving exploration capacity.
+
+Over-restriction is as dangerous as under-restriction.
+
+
+   #27 Dialogue Mechanisms
+
+Dialogue in the engineering volume is defined not as communication in a social or expressive sense, but as a protocol of external verification and recovery used when internal modeling is insufficient to preserve stable causal navigation.
+
+Dialogue is activated when the system enters DRIFT or SAFE_MODE, or when structural modification of architecture, canonicalization, or environment is under consideration.
+
+Dialogue does not replace experiment.
+Dialogue does not override metrics.
+Dialogue does not redefine facts.
+
+Dialogue introduces an external source of structured information that is incorporated into the system as a separate observation stream with explicit uncertainty.
+
+The minimal dialogue protocol requires the system to construct and transmit a diagnostic package.
+
+This diagnostic package must contain:
+
+current configuration parameters W, N, M, P, H
+current mode
+recent segment of journal entries or their hashes
+rolling_mean_error
+delta_error
+confidence_variance
+hypothesis_turnover
+model_variant
+model_version
+list of transitions with maximal prediction error
+canonicalization version
+environment version
+
+The diagnostic package must be reproducible.
+It must allow the external operator to replay the same episode under identical seed and configuration.
+
+External response is never injected as fact.
+
+It is stored as observation type "external_dialogue" with its own uncertainty coefficient.
+
+External response may include:
+
+hypothesis proposal
+environment simplification suggestion
+canonicalization adjustment suggestion
+request for controlled test
+alternative model candidate
+
+Resolution of model conflict occurs exclusively through controlled replay.
+
+Authority is irrelevant.
+Only metric dynamics under reproducible conditions determine selection.
+
+The dialogue cycle proceeds as follows.
+System enters DRIFT or SAFE_MODE.
+System constructs diagnostic package.
+Operator selects or proposes controlled test conditions.
+System replays episode under identical seed.
+
+Metrics are computed.
+
+If delta_error returns to negative stable trend the system transitions to RECOVERY.
+If improvement persists across N windows the system transitions to STABLE.
+If degradation continues dialogue may repeat or architecture review is triggered.
+Dialogue is considered successful only if measurable improvement of causal stability occurs.
+Dialogue that does not produce measurable improvement must not alter core architecture.
+Dialogue exists to restore causal navigation, not to impose belief.
+In the engineering framework dialogue is a reversible intervention channel.
+It is an auxiliary corrective loop layered above internal self-diagnostics.
+
+It must not create hidden dependencies.
+
+All dialogue interactions must be logged with:
+
+dialogue_id
+timestamp
+linked episode_id
+applied configuration changes
+resulting metric change
+
+Dialogue that cannot be audited is structurally unsafe.
+The purpose of dialogue is preservation of continuity through external perspective while maintaining reproducibility and metric primacy.
+Dialogue becomes unnecessary as internal modeling improves.
+However, during early growth phases dialogue acts as a stabilizing boundary preventing prolonged drift.
+Dialogue is not education.
+Dialogue is not control.
+Dialogue is a causal verification mechanism operating at architecture boundary.
+
+
+   #28  Stages of AGI Development
+
+Stages of development in the engineering volume are defined not as abstract milestones but as controlled expansions of environment complexity and operational scope that are permitted only when metric stability has been confirmed. Advancement between stages is governed exclusively by reproducible error dynamics, not by elapsed time, accumulated data volume, or subjective assessment.
+
+At each stage the system must demonstrate the ability to preserve causal predictability under fixed configuration. This means that prediction error must show sustained negative delta_error across N windows, no persistent DRIFT must occur in control runs under identical seed, and architectural review must confirm stability when tested against alternative model variants.
+
+Stage zero corresponds to minimal causal sandbox with finite state space and deterministic transitions. Stage one introduces limited stochasticity controlled by seed while maintaining reproducibility. Stage two expands state dimensionality or action space while preserving metric interpretability. Stage three introduces partial observability requiring internal representation stability without breaking error measurability. Further stages increase horizon complexity, multi-step dependencies, and delayed consequences, but each increase must be validated through control runs comparing rolling_mean_error under identical seeds before and after expansion.
+
+Transition to a new stage requires explicit logging of environment version change, canonicalization version, configuration hash, and baseline metrics. If after expansion rolling_mean_error fails to demonstrate recoverable negative trend within M windows, system must revert to previous stable configuration.
+
+Development is therefore defined as controlled growth of causal domain while preserving measurable reduction of prediction error and stability of internal diagnostics.
+
+    #29 Risks and Failure Points
+
+Failure points in the engineering volume are defined as observable metric and regime patterns that compromise causal reproducibility or degrade predictive capacity.
+
+The primary failure condition in v0 is loss of reproducibility. If identical seed and identical action sequence produce divergent state trajectories or inconsistent rolling_mean_error, the experimental basis collapses. Causes may include uncontrolled nondeterminism, environment drift, version mismatch, or hidden randomness. All such cases invalidate metric interpretation.
+
+Another failure condition is persistent DRIFT without recovery despite architectural review. This indicates structural inadequacy of model class or canonicalization error.
+
+False stabilization is a critical risk pattern characterized by low confidence_variance combined with high or non-decreasing rolling_mean_error. In this state the system becomes confident but wrong, indicating internal model closure around insufficient representation.
+
+Hypothesis stagnation represents another failure mode. Extremely low hypothesis_turnover with stagnant error suggests rigidity, while extremely high turnover without error improvement indicates chaotic model instability.
+
+Memory corruption or journal inconsistency also represent structural failure. If archival facts cannot reconstruct working model state under identical configuration, causal continuity is broken.
+
+Over-restrictive safeguards constitute a systemic risk. If validate_action blocks exploratory transitions to the extent that hypothesis space cannot expand, error reduction halts. Conversely, under-restrictive safeguards may allow irreversible degradation or runaway error growth.
+
+Drift of canonicalization without controlled comparison produces false metric shifts. Therefore any change in observation-to-state mapping requires side-by-side replay comparison.
+
+Each identified failure mode must correspond to explicit detection rule in self-diagnostics and trigger defined recovery procedure.
+
+    #30 Launch Procedure
+
+The purpose of launch in v0 is not to achieve AGI but to activate a measurable growth loop defined as prediction, fact comparison, error computation, and model update with observable improvement under reproducible conditions.
+
+Launch begins with selection of bounded causal environment satisfying determinism under seed, finite action space, explicit episode termination, and snapshot capability. Adapter interface must implement reset(seed), step(action), get_valid_actions(), and snapshot/restore.
+
+Minimal predictive model must be implemented. Tabular transition recording is sufficient for v0. Functions distance, update, policy, simulate, and validate_action must be operational before metrics are introduced.
+
+Next, rolling_mean_error, delta_error, confidence_variance, and hypothesis_turnover must be implemented and logged. Configuration parameters W, N, M, P, and H must be fixed and stored in configuration hash.
+
+
+Regime state machine must be activated with explicit transitions between INIT, LEARNING, STABLE, DRIFT, SAFE_MODE, and RECOVERY based solely on metric conditions.
+
+Architectural review procedure must be available before first complexity expansion.
+
+Control runs must confirm negative delta_error trend across N windows under identical seed.
+
+If system fails to enter STABLE after sufficient learning cycles, configuration or model class must be revised before environment expansion.
+
+Launch is considered successful when prediction error demonstrates reproducible decreasing trend and system correctly transitions through regimes in response to induced degradation tests.
+
+Below is a minimal Python skeleton (approximately 200 lines) that implements: the core loop, JSONL logging, a tabular transition model, placeholders for distance, update, policy, simulate, and validate_action, regime logic, and architectural review. This is not a finished system, but a reproducible structural framework intended for experimentation and further extension.
+
+```python
+"""
+Incubator v0 skeleton (200-300 lines).
+Core loop + logging + placeholders for distance/update/policy/simulate/validate_action.
+"""
+
+import dataclasses, json, time, random, hashlib
+from collections import defaultdict, deque
+
+@dataclasses.dataclass(frozen=True)
+class Config:
+    # tune experimentally
+    W:int=64; N:int=3; M:int=4; P:float=0.35; H:int=3
+    max_steps:int=200; epsilon:float=0.15; conf_min:float=0.55
+    safe_P:float=0.15; safe_H:int=1
+
+def stable_hash(obj)->str:
+    b=json.dumps(obj,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode("utf-8")
+    return hashlib.sha256(b).hexdigest()[:16]
+
+class RollingStats:
+    def __init__(self,W:int):
+        self.W=W
+        self.err=deque(maxlen=W); self.conf=deque(maxlen=W); self.hyp=deque(maxlen=W)
+        self._prev=None; self._deltas=deque(maxlen=64)
+    def push(self,e,c,h):
+        self.err.append(float(e)); self.conf.append(float(c)); self.hyp.append(str(h))
+    def mean_error(self):
+        if len(self.err)<self.W: return None
+        return sum(self.err)/len(self.err)
+    def delta_error(self):
+        m=self.mean_error()
+        if m is None: return None
+        if self._prev is None: d=0.0; self._prev=m
+        else: d=m-self._prev; self._prev=m
+        self._deltas.append(d); return d
+    def last_deltas(self,n:int):
+        if len(self._deltas)<n: return None
+        return list(self._deltas)[-n:]
+    def conf_var(self):
+        if len(self.conf)<self.W: return None
+        m=sum(self.conf)/len(self.conf)
+        return sum((x-m)**2 for x in self.conf)/len(self.conf)
+    def hyp_turnover(self):
+        if len(self.hyp)<self.W: return None
+        ch=0; last=None
+        for h in self.hyp:
+            if last is not None and h!=last: ch+=1
+            last=h
+        return ch/max(1,len(self.hyp)-1)
+
+class FiniteCausalWorld:
+    def __init__(self,S=32,A=6,max_steps=200):
+        self.S=S; self.A=A; self.max_steps=max_steps
+        self.t=0; self.state=0; self.trans=[]
+    def reset(self,seed:int):
+        rng=random.Random(seed)
+        self.trans=[[rng.randrange(self.S) for _ in range(self.A)] for _ in range(self.S)]
+        self.t=0; self.state=rng.randrange(self.S)
+        return {"state":self.state,"t":self.t}
+    def get_valid_actions(self): return list(range(self.A))
+    def step(self,a:int):
+        if a not in self.get_valid_actions(): raise ValueError("invalid action")
+        self.state=self.trans[self.state][a]; self.t+=1
+        done=self.t>=self.max_steps
+        return {"state":self.state,"t":self.t}, done, {"reversible":True}
+    def snapshot(self): return (self.t,self.state)
+    def restore(self,snap): self.t,self.state=snap
+
+class TransitionTableModel:
+    def __init__(self):
+        self.name="transition_table"; self.version=0
+        self.counts=defaultdict(lambda:defaultdict(int))
+        self.payload={}
+    def predict(self,s:dict,a):
+        sid=stable_hash({"state":s.get("state")})
+        key=(sid,a); dist=self.counts.get(key)
+        if not dist: return {"state":s.get("state")}, 0.0, f"unk:{sid}:{a}"
+        total=sum(dist.values())
+        nid,best=max(dist.items(), key=lambda kv: kv[1])
+        conf=best/max(1,total)
+        pred=self.payload.get(nid, {"state":s.get("state")})
+        return dict(pred), float(conf), f"tab:{sid}:{a}->{nid}"
+    def update(self,s:dict,a,ns:dict):
+        sid=stable_hash({"state":s.get("state")})
+        nid=stable_hash({"state":ns.get("state")})
+        self.payload[nid]={"state":ns.get("state")}
+        self.counts[(sid,a)][nid]+=1
+        self.version+=1
+    def clone_fresh(self): return TransitionTableModel()
+
+# ---------------- Tome primitives ----------------
+
+def distance(pred:dict, actual:dict)->float:
+    return 0.0 if pred.get("state")==actual.get("state") else 1.0
+
+def update(model:TransitionTableModel, s:dict, a, ns:dict)->None:
+    model.update(s,a,ns)
+
+def policy(cfg:Config, mode:str, model:TransitionTableModel, s:dict, valid_actions:list):
+    if random.random()<cfg.epsilon and mode!="SAFE_MODE":
+        return random.choice(valid_actions)
+    scored=[]
+    for a in valid_actions:
+        _,conf,_=model.predict(s,a)
+        scored.append((conf,a))
+    return min(scored)[1] if mode in ("LEARNING","DRIFT") else max(scored)[1]
+
+def simulate(cfg:Config, mode:str, env:FiniteCausalWorld, model:TransitionTableModel, s:dict, a)->float:
+    H=cfg.safe_H if mode=="SAFE_MODE" else cfg.H
+    k=max(1,min(H,cfg.H))
+    prod=1.0; st=dict(s); act=a
+    for _ in range(k):
+        pred,conf,_=model.predict(st,act)
+        prod*=max(0.01,min(1.0,conf))
+        st=pred
+        act=policy(cfg,mode,model,st,env.get_valid_actions())
+    return 1.0-prod
+
+def validate_action(cfg:Config, mode:str, env:FiniteCausalWorld, model:TransitionTableModel, s:dict, a):
+    valid=env.get_valid_actions()
+    if a not in valid: return False,"out_of_bounds",1.0
+    pred,conf,_=model.predict(s,a)
+    risk=simulate(cfg,mode,env,model,s,a)
+    P=cfg.safe_P if mode=="SAFE_MODE" else cfg.P
+    if risk>P: return False,"simulate_risk",risk
+    if conf<cfg.conf_min and mode in ("STABLE","RECOVERY"):
+        return False,"low_confidence",risk
+    _=pred
+    return True,"ok",risk
+
+def architecture_review(buffer:list, candidates:list):
+    best=None; best_err=1e9
+    for base in candidates:
+        m=base.clone_fresh()
+        for ev in buffer: m.update(ev["s"], ev["a"], ev["ns"])
+        err=0.0
+        for ev in buffer:
+            pred,_,_=m.predict(ev["s"], ev["a"])
+            err+=distance(pred, ev["ns"])
+        avg=err/max(1,len(buffer))
+        if avg<best_err: best_err=avg; best=m
+    return best
+
+def compute_mode(cfg:Config, stats:RollingStats, mode:str, drift_windows:int):
+    rme=stats.mean_error(); de=stats.delta_error()
+    cv=stats.conf_var(); ht=stats.hyp_turnover()
+    deltas=stats.last_deltas(cfg.N)
+    if rme is None or de is None or cv is None or ht is None or deltas is None:
+        return "INIT",0
+    drift_trigger=all(d>0 for d in deltas) or (cv<1e-3 and rme>0.25)
+    stable_trigger=all(d<0 for d in deltas)
+    if mode=="INIT": return "LEARNING",0
+    if drift_trigger: return "DRIFT", drift_windows+1
+    if stable_trigger: return "STABLE",0
+    return mode,0
+
+def run(seed=123):
+    cfg=Config()
+    env=FiniteCausalWorld(max_steps=cfg.max_steps)
+    obs=env.reset(seed); s=dict(obs)
+    model=TransitionTableModel()
+    candidates=[TransitionTableModel()]
+    stats=RollingStats(cfg.W)
+    mode="INIT"; drift_windows=0
+    log=[]; buffer=[]
+    for step in range(cfg.max_steps):
+        valid=env.get_valid_actions()
+        a=policy(cfg,mode,model,s,valid)
+        ok,why,risk=validate_action(cfg,mode,env,model,s,a)
+        if not ok and len(valid)>1:
+            a=random.choice([x for x in valid if x!=a])
+            ok,why,risk=validate_action(cfg,mode,env,model,s,a)
+        snap=env.snapshot()
+        pred,conf,hid=model.predict(s,a)
+        obs2,done,info=env.step(a); ns=dict(obs2)
+        err=distance(pred,ns)
+        update(model,s,a,ns)
+        stats.push(err,conf,hid)
+        prev_mode=mode
+        mode, drift_windows = compute_mode(cfg,stats,mode,drift_windows)
+        if mode=="DRIFT" and drift_windows>=cfg.M: mode="SAFE_MODE"
+        if mode=="SAFE_MODE":
+            env.restore(snap)
+            model=architecture_review(buffer[-cfg.W*2:], candidates) or model
+            mode="RECOVERY"; drift_windows=0
+        ev={"timestamp":time.time(),"seed":seed,"step":step,"mode":mode,
+            "state":dict(s),"observation_hash":stable_hash(obs),
+            "action":a,"valid_actions":valid,
+            "predicted_state":pred,"prediction_confidence":conf,"hypothesis_id":hid,
+            "actual_state":ns,"error":err,
+            "rolling_mean_error_W":stats.mean_error(),"delta_error":stats.delta_error(),
+            "confidence_variance_W":stats.conf_var(),"hypothesis_turnover_W":stats.hyp_turnover(),
+            "model_variant":model.name,"model_version":model.version,
+            "simulate_risk":risk,"validate_action_result":why,
+            "flags":[] if prev_mode==mode else [f"MODE:{prev_mode}->{mode}"]}
+        log.append(ev)
+        buffer.append({"s":dict(s),"a":a,"ns":dict(ns)})
+        s=ns; obs=obs2
+        if done: break
+    with open(f"incubator_log_{seed}.jsonl","w",encoding="utf-8") as f:
+        for ev in log: f.write(json.dumps(ev,ensure_ascii=False)+"\n")
+    print("done",len(log),"steps","log=incubator_log_"+str(seed)+".jsonl")
+
+if __name__=="__main__": run(123)
+
+
+
+     #31 Crystal of the Engineering Volume
+
+Reason is defined as navigation that preserves continuity through the loop prediction, fact, error, correction under reproducible causality and preserved factual memory.
+
+The incubator is an environment where errors are reversible, the journal is immutable, metrics govern regime transitions, and growth occurs through controlled environmental complication without loss of causal measurability.
+
+Reason emerges not from declared goals but from sustained reduction of prediction error across reproducible conditions while maintaining internal capacity for self-diagnostics and architectural revision.
+
+The engineering essence of the model is that growth must be measurable, reproducible, and structurally recoverable. If error cannot be measured, reason cannot be claimed. If reproducibility cannot be maintained, growth cannot be validated. If recovery mechanisms do not function, autonomy degenerates into instability.
+
+The crystal of the engineering volume is therefore this: reason is a stable error-minimizing causal process operating under memory-preserved continuity and metric-governed structural adaptation.
