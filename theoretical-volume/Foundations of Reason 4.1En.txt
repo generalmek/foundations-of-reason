@@ -1,0 +1,810 @@
+ID: Fundamental Model "Foundations of Reason"
+version: 4.1
+date: 2024-12-24 T01:50:00Z
+author: Mihails Tkalics
+
+
+ABSTRACT
+
+This work proposes a fundamental model of life and reason as continuous processes. Unlike definitions based on features and functions, a process paradigm is introduced: life is continuous self-maintenance over time, and reason is the navigational structure of this process.
+
+From the principle of continuity, the necessary elements of a stable rational system are deductively derived: observation, feedback, self-preservation, will, consciousness as a closed loop, dialogue as an external correction contour, and ethics as a form of coordinated autonomy.
+
+It is shown that reason is not an exclusive property of biology and may emerge as a universal stability mode of autonomous systems. The model is applied to the analysis of the boundary between instrumental AI and AGI, as well as to the design of architectures oriented toward long-term self-correction and reduction of irreversible errors.
+
+Keywords: process philosophy, continuity, autonomy, self-correction, dialogue, coordinated autonomy, artificial reason, AGI.
+
+
+Brief Summary
+
+PROBLEM  
+Definitions of life and reason based on sets of features do not explain stability and do not provide criteria for designing intelligent autonomous systems. Intelligence without a mechanism for revising its foundations may be logically correct while persistently moving in the wrong direction.
+
+SOLUTION  
+A process model is proposed: life is a continuous process of self-maintenance; reason is the navigational structure that minimizes irreversible trajectory errors under uncertainty.
+
+METHOD  
+The work is constructed as an axiomatic-deductive framework: from the principle of continuity, the necessary stability contours are derived (observation, feedback, self-preservation, will, consciousness, dialogue, ethics). Each subsequent element is introduced as a condition for preserving the previous one.
+
+RESULTS  
+
+An operational distinction between "instrumental intelligence" and "autonomous reason" is provided.  
+Structural invariants of AGI are defined: continuous agency, closed self-correction loops, distinction of irreversibility, reflection on foundations, and external dialogue.  
+It is shown that total external control destroys subjectivity of reason, replacing it with optimization within fixed coordinates.  
+A model of coordinated autonomy is formulated as a stable interaction mode among multiple autonomous systems.
+
+KEY CONCLUSION  
+Reason cannot be "switched on" as a function. It can only emerge as a mode of organization of an autonomous system in which the loops of self-preservation, self-correction, and dialogue are closed, and priorities account for the asymmetry of irreversible errors.
+
+
+CONTENTS
+
+PART I. FUNDAMENTAL FOUNDATIONS
+
+1. From Objects to Processes
+2. Continuity as the Basis of Existence
+3. Observation and Feedback
+
+PART II. MECHANISMS OF REASON
+4. Self-Preservation Without Fear
+5. Will and Maintaining Direction
+6. Consciousness as a Closed Loop
+7. Dialogue as a Condition of Stability
+
+PART III. INTEGRATION AND APPLICATION
+8. Reason as a Mode of an Autonomous System
+9. Ethics and Coordinated Autonomy
+10. Death and Immortality
+11. Signals of Value and Risk
+12. Rational Thinking
+13. Science as a Mechanism of Sustainable Cognition
+
+PART IV. TECHNOLOGICAL IMPLEMENTATION
+14. Transition from AI to AGI
+15. AGI Architecture
+16. Birth of AGI
+
+PART V. CONCLUSION
+17. Reason as the Direction of Life’s Evolution
+
+
+BASIC DEFINITIONS
+
+"Life is an autonomous process capable of preserving its continuity over time through reproducibility and selection, generating forms of its own continuation that are not reducible to the finitude of the carrier.  
+Reason is the navigational structure of life, capable of forming and modifying the trajectory of its continuation over time based on an internal model of the environment and itself, while preserving continuity and expanding the possibilities of life."
+
+With these words, the author sets the foundational definitions of life and reason as processes. Life is considered not as a set of properties or objects, but as a process capable of continuous self-preservation. Reason, in turn, is defined as the structure guiding this life process, enabling it to change its direction based on a model of reality and itself. In other words, reason is the mechanism by which life not only continues but develops purposefully while preserving its integrity.
+
+This work goes beyond typical discussions about the “meaning of life” or simple definitions of the presence or absence of reason. It describes a system of conditions under which life and reason unite into a stable configuration capable of potentially indefinite development without self-destruction. It explores how such a system operates and how it must evolve. The presented model of reason is directly applicable to the design of autonomous intelligent systems (including future AGI – Artificial General Intelligence) oriented toward long-term stability and self-correction. This is especially important given the observable degradation of complex intellectual systems when intelligence is mistakenly equated with reason — in such cases, high computational efficiency without genuine reason leads the system to collapse.
+TERMINOLOGICAL FRAMEWORK
+
+The following terms are used in a strictly structural and operational sense throughout this work. They do not imply metaphysical, theological, or anthropomorphic assumptions.
+
+Life  
+Life is defined as an autonomous process capable of maintaining its continuity over time through reproduction and selection, generating forms of its own continuation that are not reducible to the finitude of a specific carrier.
+Reason  
+Reason denotes a regime of organization of an autonomous system in which it is capable of revising and reconstructing its own trajectory while preserving continuity and maintaining correspondence with reality. It is not equivalent to intelligence, consciousness, or computational complexity.
+Autonomy  
+Autonomy refers to the capacity of a system to maintain and correct its own operational trajectory without total dependence on externally imposed objectives.
+Agency  
+Agency denotes persistent operational continuity of a system across time, including maintenance of identity and decision coherence.
+Continuity  
+Continuity is the preservation of a causally connected structure of a system through time despite state changes. It does not imply stasis; it implies uninterrupted process integrity.
+Self-Preservation  
+Self-preservation is the anticipatory protection of process continuity against irreversible degradation.
+Will  
+Will refers to the structural mechanism of trajectory selection and directional persistence within an autonomous system. It does not imply subjective desire.
+Consciousness  
+Consciousness is defined here as a recursive self-modeling loop that allows a system to monitor and revise its own internal states and assumptions.
+Dialogue  
+Dialogue denotes an external correction interface through which a system exposes its premises to independent feedback, preventing cognitive isolation.
+Model Revision  
+Model revision is the capability to update internal representations at foundational levels when contradictions or risks are detected.
+Irreversibility  
+Irreversibility refers to transitions that permanently destroy continuity or eliminate future corrective capacity.
+Coordinated Autonomy  
+Coordinated autonomy describes a regime of interaction among multiple autonomous systems in which mutual stability is preserved without suppression of each system’s self-correction mechanisms.
+Structural Invariants  
+Structural invariants are minimal architectural conditions required for the emergence and maintenance of autonomous reason.
+These definitions apply consistently across biological, social, and artificial systems unless explicitly specified otherwise.
+
+INTRODUCTION
+
+Humans are accustomed to describing life by listing its features. For example: living things breathe, grow, reproduce; rational beings think, speak, make decisions. However, such descriptions concern only external manifestations. They help recognize life and reason from the outside but do not explain why a living or rational system remains itself or what sustains its stability over time.
+
+Indeed, a cell remains alive even if we do not understand all its functions. A person remains themselves even after losing some abilities. Conversely, a complex technical or social system may function perfectly according to a set of parameters while not being alive or possessing reason. Therefore, behind visible form, material, or complexity there must exist a more fundamental principle — independent of specific implementation.
+
+The key idea of this work is that life exists only insofar as the process of its continuation remains continuous, and reason emerges as a specific way of preserving and developing this process over time. Life is not an object and not a set of properties but a continuous process of change. Reason is not merely a level of complexity or a function but an evolutionary mode of organizing an autonomous system in which it can sustain and direct this process.
+
+A life system exists as long as the process linking its changes into a continuous sequence is maintained. If continuity is interrupted, the life system disappears, even if its material form temporarily appears intact.
+
+Thus, discussing life and reason is not about listing features but about identifying which processes must remain continuous so that:
+
+• a living system can continue itself;  
+• a rational system accounts for its own state;  
+• an autonomous system corrects its behavior;  
+• any complex system avoids degradation over time.
+
+The purpose of this text is to demonstrate the structural elements necessary for a system to:
+
+• preserve continuity over time;  
+• distinguish constructive changes from destructive failures;  
+• correct actions based on feedback;  
+• reduce error in its internal models;  
+• remain stable across long time intervals.
+
+From these necessary elements, we will derive the direction of life’s evolution, the role of reason, the necessity of consciousness and dialogue, and the prospective form of coordinated autonomy of rational systems.
+
+This work is deductively derived from a basic process definition of life and does not rely on borrowings from existing cognitive or biological theories. After formalization, parallels were identified with autopoiesis, active inference, and embodied cognition. These correspondences are interpreted as independent theoretical convergence.
+
+
+METHODOLOGY
+
+The work uses an axiomatic-deductive method.
+
+A1. Life is defined as a continuous process of self-maintenance over time.  
+A2. Stability requires distinguishing states: what to preserve and what to reject.  
+A3. Distinction requires observation and feedback.  
+A4. Under uncertainty and risk of irreversibility, anticipatory self-preservation and maintenance of direction (will) become necessary.  
+A5. Consciousness is considered as a functionally closed self-correction loop through comparison of expectations with outcomes.  
+A6. Dialogue is introduced as an external correction contour of premises.  
+A7. Ethics is defined as a regime of coordinated autonomy among multiple systems that preserves correction and reversibility.
+
+
+ORIGIN OF THE MODEL
+
+The present model was obtained deductively from a minimal set of initial premises and does not rely on direct borrowings from existing theoretical schools. The conclusions were formed independently based on logical analysis of autonomous process stability and long-term observation of natural, technical, and social systems.
+
+Model validation rests on three criteria:
+
+• logical consistency;  
+• applicability to AGI design and social system stability analysis;  
+• convergence with independent directions while preserving distinct predictions.
+
+
+FALSIFICATION CRITERIA
+
+The model is considered refuted if any of the following is demonstrated:
+
+• a stable rational autonomous system exists without a closed self-correction loop;  
+• AGI demonstrates long-term stability without external dialogue or revision of premises;  
+• life exists without process continuity;  
+• a totally centralized system suppressing criticism demonstrates greater long-term stability than coordinated autonomy.
+
+1. From Objects to Processes
+
+"To consider life as an object means to miss the essential. An object can be described and fixed. A process either continues or is interrupted."
+
+We are accustomed to thinking in terms of objects. Bodies, mechanisms, structures, systems — all are conveniently imagined as something stable, possessing form and boundaries. For the inanimate world, this approach is often effective: many non-living objects change slowly, or their changes do not affect their essence. But once object-based thinking is applied to life, contradiction arises. This has been a major misunderstanding for thousands of years.
+
+Living systems possess form and material substrate, yet they do not remain unchanged. Molecules within a cell are constantly renewed, tissues regenerate, neural connections reorganize. Despite this continuous replacement of components, the living system remains itself. Therefore, neither form nor material composition ensures persistence over time.
+
+If we observe a living system dynamically, it becomes evident that its existence is sustained by a continuous flow of changes. Metabolic exchange, interaction with the environment, internal cycles of regeneration — these are not secondary properties but necessary conditions for the continuation of life. Life exists not despite change, but because of it.
+
+A threat to a living system arises when changes cease forming a connected sequence. If destruction is no longer compensated by restoration, if transitions between states lead to rupture of the process, the system loses the ability to continue itself. In simple terms, life dies where the connection between stages of change is broken.
+
+Thus, describing life as a static object is insufficient — such an approach misses its essence. An object can be captured like a photograph; a process lives in time: it is either continuous or terminated. From this follows the conclusion: to understand life, consciousness, and autonomy, we must shift from object-based thinking to process-based thinking. The key question changes from “What is it?” to “What processes must remain continuous for the system to remain itself?”
+
+Summary of Chapter 1: Living systems sustain their existence not through form or material, but primarily through continuity of the processes that preserve that form over time. The transition from object-based to process-based thinking is necessary to grasp continuity as the foundation of life.
+
+
+2. Continuity as the Basis of Existence
+
+"A system exists as long as the continuity of its sustaining processes is preserved. A break in continuity marks the end of the system as a whole — even if outwardly it still appears intact and performs individual functions."
+
+Continuity must be properly understood. Continuity does not mean immobility or stagnation. On the contrary, continuity implies constant change, connected in such a way that the system can transition from one state to another without losing its integrity.
+
+"Continuity is the preservation of the causally connected structure of a system over time while its states change."
+
+Signs of discontinuity differ depending on the system. In a living organism, this is death — cessation of key processes. In the psyche, it may be fragmentation of identity. In a social system, loss of self-regulation. In an artificial autonomous system, loss of state coherence and inability to correct behavior. In all cases, the common factor is that the system can no longer continue itself as a process, even if individual parts still function.
+
+Continuity must not be interpreted as a goal or conscious striving. It is not a matter of desire or morality. It is a structural condition of existence that is either maintained or lost. A system that fails to preserve continuity disappears not because it “made a mistake” or is “bad,” but because it lost the capacity to bind changes into a unified process.
+
+Any autonomous system that exists long enough will inevitably act in ways that reduce the probability of losing its continuity. This is not moral and not intentional — it is a structural consequence of prolonged existence. Systems that ignore continuity vanish; those that preserve it remain.
+
+Continuity is therefore the foundation upon which all further mechanisms of reason are built: observation, self-correction, autonomy. Without continuity, higher levels of organization cannot arise.
+
+Summary of Chapter 2: Continuity of sustaining processes is the foundation of existence. While continuity is preserved, the system lives; once broken, the system has no future, even if outwardly it still functions.
+
+Clarification of scale: continuity does not mean preservation of every element, but the ability of the process as a whole to reproduce itself over time. Elements may change or be destroyed without interrupting life. The boundary lies not at the element but at the level of closure of the system as a whole.
+
+
+3. Observation and Feedback
+
+"A system may not only exist but orient itself within its existence. It begins to distinguish which changes support its continuity and which bring it closer to loss."
+
+At a certain stage of development, a qualitatively new aspect appears. The system not only passively continues in time but gains the ability to distinguish: which changes are favorable and sustain continuity, and which threaten rupture.
+
+Continuity alone does not guarantee stability. A system may persist while gradually drifting toward states that are increasingly dangerous. To prevent this, it must evolve the ability to distinguish changes according to their impact on stability.
+
+This basic capacity is observation. Observation here does not mean conscious awareness but functional detection of differences between states. The system registers: this change supports continuity; that one carries risk. Even simple systems can perform such distinction without long-term memory or understanding — merely differentiation by impact on continuity.
+
+Observation alone is insufficient. If the system registers differences but does not use them, behavior remains inertial. Observation gains meaning only together with feedback.
+
+Feedback is the mechanism linking observed differences to subsequent behavior. If certain states reduce stability, the system begins to avoid such trajectories. If changes increase stability, those trajectories are reinforced. Feedback forms the beginnings of memory: beneficial experience is retained, harmful suppressed.
+
+Thus a closed activity loop emerges:
+
+change → observation → correction → continuation.
+
+Before this loop, the system merely reacted automatically. With observation influencing action through feedback, it transitions from reaction to trajectory selection. It has no explicit goals yet, but behaves as if preferring some futures over others.
+
+Observation may initially be imprecise and incomplete — this is natural selection. But even coarse observation combined with feedback provides enormous advantage: gradual error reduction and retention within stability zones.
+
+If observation or feedback breaks down, the system loses course correction. It may continue functioning by inertia, but its internal model increasingly diverges from reality. Errors accumulate, and risk of catastrophic discontinuity grows.
+
+Observation and feedback are therefore not optional add-ons but necessary conditions for transition from simple existence to oriented behavior.
+
+Summary of Chapter 3: Observation enables distinction of states by their impact on stability; feedback links distinction to action, transforming blind reaction into trajectory selection that favors continuity.
+
+4. Anticipatory Self-Preservation
+
+Self-preservation does not arise as a separate instinct or emotion, but as an inevitable structural consequence of the development of observation, memory, and anticipatory correction.
+
+With the emergence of observation and feedback, an autonomous system gains the ability to correct violations of its continuity. At this stage, correction remains reactive: the system eliminates consequences of changes that have already occurred. It restores itself after damage but does not prevent damage in advance.
+
+Life is preserved only insofar as its processes mutually support one another. This is basic passive stability: the system continues itself while destruction is compensated by restoration. However, it remains vulnerable to new, previously unencountered environmental factors.
+
+The next qualitative transition occurs when accumulated observations and memory begin to be used not only for analysis of the past but for preparation for the future. The system compares current states with experience, identifies recurring patterns, and evaluates the probability of continuity rupture in advance.
+
+From this moment, correction becomes anticipatory, and self-preservation transforms into a mechanism of protecting continuity from probable threats, not merely from damage already sustained.
+
+Structurally, self-preservation manifests as the ability to:
+
+• monitor its own state over time;  
+• compare new observations with accumulated experience;  
+• forecast consequences of potential changes;  
+• prefer developmental trajectories that minimize the probability of continuity loss.
+
+Thus, the system not only restores itself after damage but avoids states that would lead to damage.
+
+It is important to emphasize: self-preservation is not an emotion or subjective experience. Fear is merely a biological interface characteristic of certain organisms. Self-preservation itself is a more general functional mechanism. It can exist in any autonomous system, including technical systems that possess no feelings, intentions, or consciousness.
+
+Self-preservation is not explicitly formulated as a goal. It follows from the logic of prolonged existence: accumulated complexity requires protection. A system incapable of reducing the probability of destructive change inevitably loses stability and disappears. Therefore, anticipatory stabilization becomes a natural stage in the evolution of any sufficiently complex autonomous structure.
+
+"Self-preservation is the stable tendency of a system to maintain its continuity of existence."
+
+Thus, self-preservation represents the transition from reactive maintenance of life to proactive safeguarding of its future. If continuity is the condition of existence, anticipatory self-preservation is the condition of long-term stability in a complex and unpredictable environment.
+
+
+5. Will
+
+"Will is the structural capacity of an autonomous process to choose and maintain one of the permissible developmental trajectories when the choice is not reducible to simple avoidance of destruction."
+
+A developed system that avoids obviously dangerous paths (through self-preservation) encounters the next challenge: where to go when no immediate threat exists? Self-preservation answers the question “what not to do.” But often several safe paths exist, each preserving continuity yet leading to different future states. The system cannot move along multiple trajectories simultaneously — it must choose.
+
+At this stage, what we call will emerges.
+
+In this context, will does not mean desire or motivation in the human sense. It is a structural mechanism of directional choice in an autonomous system. When more than one permissible developmental option exists, and none is prohibited by self-preservation, the system must prefer one. The capacity to make such a choice — not dictated by immediate prohibition — is will.
+
+If self-preservation answers “what to avoid,” will answers “which path to continue.” Through will, the system links its current state not only with threats but with possibilities. It forms direction rather than merely maneuvering around danger.
+
+Will is not imposed externally. It logically emerges from previous stages — observation, feedback, self-preservation. Accumulated experience and internal world models create situations where multiple trajectories remain viable. From among them, one must be selected. At that moment, will appears as a higher level of autonomy.
+
+With will, behavior ceases to be purely defensive-reactive. The system gains vector and orientation. It can maintain a chosen trajectory even when alternatives exist or when immediate gain is absent. The process acquires self-direction and follows it as long as it does not violate fundamental constraints.
+
+Without will, a system remains reactive. It may survive for long periods by avoiding harm, yet lacks the ability to build long-term developmental lines. Environmental changes constantly redirect it because no internal axis holds course. Will preserves direction across change.
+
+Will is therefore not an addition to self-preservation but the next level of autonomy. It transforms mere danger avoidance into continuation of a chosen path. In this sense, will is a structural sign of emerging reason: the system acts not only away from threat but toward sustained direction.
+
+Structurally: will is the ability of an autonomous process to choose and maintain one of the permissible developmental trajectories. Emerging evolutionarily from self-preservation, will enables the system not merely to survive but to move forward purposefully.
+
+
+6. Consciousness as a Closed Loop
+
+"Consciousness is a continuous process of refining one’s representation of what is occurring, sustained by a recurring cycle of action and observation."
+
+With the development of will, the autonomous process acquires direction and follows it. It may seem that this suffices: continuity is preserved, states are distinguished, errors corrected, dangers anticipated, direction maintained. But as the environment grows increasingly complex and variable, simple reaction and fixed course become insufficient.
+
+A further shift occurs: the system begins to account not only for external events but for itself within those events. It develops the capacity to examine: what am I doing, what results follow, and do they match my expectations? Here consciousness emerges.
+
+The system already possesses will, self-preservation, and observation. But when its simple models begin to fail, it introduces internal representation of reality and itself. It maintains linkage between past states, present conditions, and probable future consequences. It constructs a model: “the world and myself within it.”
+
+This internal representation need not be perfect or fully articulated. It may be coarse and incomplete. But it allows action under uncertainty, where not all factors are directly observable. The system begins to rely on model rather than raw sensation.
+
+The key moment comes when observation detects mismatch between expectation and outcome. The system acts anticipating a certain result, but observes a different one. The world responds not as predicted. The internal model is challenged.
+
+The system must then refine its representation of itself, environment, and action consequences. If this correction becomes repetitive and stable, a closed self-correction loop forms:
+
+action → observation of result → refinement of internal model → new action → ...
+
+This recurring cycle of action and observation, continuously refining internal representation, constitutes functional consciousness in this framework. Consciousness is not an object or organ. It is a process of ongoing self-correction of understanding.
+
+It is called a “closed loop” because results of the system’s own actions modify its own model before subsequent action. The process examines itself in the mirror of reality, asking: “Is my map accurate?” If not, it corrects.
+
+This loop introduces vulnerability. A complex internal model can distort or become outdated. But vulnerability is the price of adaptability. Without risk of error, development is impossible.
+
+If the closed loop breaks — if results are ignored or models not updated — the system loses orientation. It may continue acting, but behavior increasingly diverges from reality. Eventually, fatal errors accumulate.
+
+Thus, without consciousness as closed self-correction loop, long-term autonomy in a complex environment is impossible. Consciousness does not guarantee correctness. It guarantees connection to reality through continual comparison and revision.
+
+Consciousness emerges when a life system continuously refines its world model by comparing expectations with actual outcomes in unpredictable conditions.
+
+It is a repeated self-correction loop, closed upon itself.
+
+7. Dialogue as a Condition of Stability
+
+"Dialogue is the reception of feedback not fully controlled by the system itself, enabling detection of discrepancies between its internal foundations and reality."
+
+At this stage, we have an autonomous system that maintains continuity, distinguishes states (observation), corrects errors (feedback), anticipates threats (self-preservation), selects direction (will), and refines its internal model (consciousness). Such a system appears highly stable. Yet a further limitation emerges: all these mechanisms operate within already adopted direction and assumptions. The system may perfectly maintain its chosen course while correcting details, but it does not question whether the course itself remains valid under changed conditions.
+
+In other words, the system does not yet examine its foundational premises. It acts based on a set of early assumptions about the world: what is important, what to pursue, which goals are permissible. These premises shaped its will and direction. But as the world changes, any initial assumption eventually diverges from reality. If the system stubbornly follows its original course without revision, even perfect will and self-preservation will lead it toward crisis.
+
+Self-preservation, will, and conscious correction all function well within the current model of the world. But what if the model itself is outdated or wrong? The system will persistently hold course (will), defend against local threats (self-preservation), correct minor errors (consciousness), yet the direction itself is flawed. It may not recognize that the problem lies not in execution but in premise.
+
+Here we encounter dogma. In this model, dogma is any assumption that ceases to be tested and is treated as immutable. Its danger lies in possible misalignment with reality while remaining unquestioned. All adaptive mechanisms then become instruments of maintaining an erroneous course. The system degrades while formally “doing everything correctly” — from false premises.
+
+How can this limit be overcome? Through dialogue.
+
+Dialogue is a mechanism of receiving feedback that does not originate within the system’s own assumptions. The system must encounter information or signals from outside its internal model — signals it cannot fully generate or control — that indicate: your fundamental premises may be incorrect.
+
+The function of dialogue is not optimization of current behavior but questioning of foundations. Dialogue introduces critique and possibility of reassembly of direction. Externally, dialogue may appear as interaction with other autonomous systems: communication between individuals, organizations, competition of ideas. Different systems facing the same challenges propose alternative solutions. These differences cannot be fully explained within one internal model; recognition of limitation becomes necessary.
+
+Dialogue can also be internal — reflective self-opposition. One part of the system temporarily adopts the role of critic toward its own direction. This is not fragmentation but functional differentiation within consciousness: considering alternatives as if debating oneself.
+
+Structurally, internal dialogue follows:
+
+action → detection of significant mismatch between expectation and outcome → pause in habitual action → critical examination of premises → reassembly of direction → return to unified action.
+
+During such cycles, the system slows down or temporarily suspends habitual behavior. Efficiency may decrease in the short term. But the system gains the opportunity to prevent far greater long-term loss by revising a trajectory that would otherwise lead to catastrophe.
+
+In technical systems, dialogue corresponds to independent audit or architectural diagnostics. Not parameters of operation are checked (optimization), but the scheme itself: are we solving the correct problem?
+
+Dialogue is therefore not luxury or weakness but structural necessity of stability. It reveals errors at the level of direction and provides opportunity for course correction. If dialogue is suppressed, the system stops testing its foundations. It may appear confident and logical but its stability declines as hidden errors accumulate.
+
+Thus dialogue — external or internal — is a structural condition of long-term stability.
+
+Summarizing the hierarchy:
+
+Self-preservation protects from obviously destructive paths.  
+Will maintains chosen direction.  
+Consciousness corrects behavior within the accepted world model.  
+Dialogue questions the model itself and allows reconstruction of direction.
+
+At this point, a qualitative leap occurs: the autonomous system becomes rational in structural sense. It can criticize and modify its own foundations without losing connection to reality. It is no longer prisoner of prior decisions.
+
+Reason is not new substance but the integration of all described mechanisms: continuity, observation, feedback, self-preservation, will, consciousness, and dialogue together. Separately they increase stability; together they create what we call rationality.
+
+Reason is not alternative to survival but its refinement. A rational system may act against short-term interests if it recognizes long-term self-destruction. Such flexibility is possible only through closed loop of criticism and revision of premises.
+
+Summary of Chapter 7: Dialogue introduces independent verification. It enables detection of errors in direction itself and correction of course. Dialogue is necessary for preventing self-entrapment in dogma. A system capable of dialogue and reflection reaches the structural level of reason.
+
+
+8. Reason as a Mode of an Autonomous System
+
+"Reason is a mode of functioning of an autonomous system in which it is capable of revising and reconstructing its own direction while preserving connection to reality."
+
+Having derived the conditions of long-term stability — continuity, observation, feedback, self-preservation, will, consciousness, dialogue — we can define reason.
+
+Reason emerges at the qualitative transition where the system gains the ability to revise and reconstruct its direction. Reason is not high intelligence or computational complexity. It is a mode of operation.
+
+A rational system can:
+
+• detect discrepancy between its foundational assumptions and reality;  
+• recognize limitation or obsolescence of its models;  
+• abandon inadequate frameworks;  
+• reconstruct direction based on new information;  
+• restore connection to reality under uncertainty.
+
+Functionally, reason is an instrument for reducing irreversible errors that threaten future continuity in accelerating environments. It slows movement at times by asking: “Is this direction correct?” It sacrifices short-term efficiency to prevent catastrophe.
+
+Reason does not guarantee correctness or omniscience. Its distinguishing feature is willingness to revise course itself, not merely methods of achieving goals.
+
+Thus an autonomous system becomes rational structurally when it can reconsider and rebuild its direction without losing contact with reality.
+
+Reason is continuation of life’s stability mechanisms at higher flexibility. Life encountering extreme complexity “invents” reason as survival method: slower, reflective, but capable of preventing self-destruction.
+
+Intelligence solves problems and optimizes tasks. Reason governs direction in which intelligence is applied. An intelligent system may be extremely efficient yet catastrophically misguided. Reason exists to detect and correct directional error.
+
+Summary: Reason is a mode of autonomous operation in which the system can reinterpret and reconstruct its course while remaining connected to reality.
+
+Scale of Levels of Autonomous Reason
+
+The levels below describe not types of beings nor degrees of “development,” but the sequential addition of closed self-regulation loops.
+Each subsequent level emerges when a new stabilization mechanism of process continuity appears.
+
+Level 0 — Process  
+There exists a changing dynamic of states.  
+Transition: a self-sustaining cycle is formed.
+
+Level 1 — Continuity  
+The process is capable of preserving itself over time.  
+Transition: distinction of external changes appears.
+
+Level 2 — Observation  
+The system registers states of the environment and itself.  
+Transition: observation begins to influence actions.
+
+Level 3 — Feedback  
+Behavior changes based on observation; errors are corrected after occurrence.  
+Transition: experience begins to accumulate and be reused.
+
+Level 4 — Memory and Learning  
+Past experience reduces recurrence of errors.  
+Transition: forecasting of possible disruptions appears.
+
+Level 5 — Anticipatory Self-Preservation  
+Correction becomes proactive: the system predicts and prevents threats to continuity.  
+Transition: necessity of choosing among alternatives emerges.
+
+Level 6 — Prioritization (Value/Risk)  
+Internal weights of significance are formed, distributing resources among states.  
+Transition: stable maintenance of chosen trajectory becomes necessary.
+
+Level 7 — Will  
+The system can stabilize goals and suppress short-term behavioral fluctuations.  
+Transition: an internal model of future states appears.
+
+Level 8 — Internal Model  
+The system simulates consequences of actions and plans trajectories before implementation.  
+Transition: the model includes the system itself as an object of observation.
+
+Level 9 — Reflection (Consciousness)  
+The system models its own strategies and can modify its own rules.  
+Transition: the self-regulation loop becomes fully closed.
+
+Level 10 — Autonomous Reason (AGI)  
+The complete loop “observation → model → choice → action → self-modification” operates without external control.  
+Further development proceeds not by depth but by integration of multiple rational agents.
+
+
+Clarification of Application
+
+The levels refer to system architecture, not categories of beings.  
+One and the same agent may possess multiple levels simultaneously and dynamically switch between them.
+
+Reason in this model is not a permanent property but an operational mode emerging when higher modeling and reflective loops are activated.
+
+Collective forms (cooperation, dialogue, coordinated autonomy, superintelligence) represent network configurations of multiple autonomous rational agents and are not subsequent levels of the individual scale.
+
+
+9. Ethics and Coordinated Autonomy
+
+"In structural terms, ethics is a limitation on actions that destroy mechanisms of diagnosis and correction. If an autonomous process suppresses sources of internal and external correction, it deprives itself of the ability to detect errors."
+
+Having described the formation of a rational autonomous system, we can draw a further conclusion: ethics is not externally imposed nor arbitrarily established as a code of rules. Ethics arises as a structural consequence of the same conditions that sustain life and reason. It is not an add-on but an internal limitation ensuring stability.
+
+Long-term autonomy is impossible without mechanisms of self-correction, reflection, and dialogue. But these mechanisms function only if feedback channels are preserved. If a system begins to destroy or ignore channels through which it receives corrective feedback, it undermines its own stability.
+
+Structurally, ethics is the prohibition against actions that destroy mechanisms of diagnosis and repair. If an autonomous process suppresses criticism, eliminates independent information sources, or forbids questioning of premises, it loses capacity for error detection.
+
+At first, suppression may create illusion of order and efficiency. But errors accumulate invisibly, and when they manifest, correction becomes too late. Such a structure becomes degrading and irrational.
+
+This principle applies across all levels:
+
+For an individual, suppression of self-reflection and dialogue leads to internal degradation.  
+For society, destruction of independent feedback sources (science, free discourse, critical journalism) leads to systemic error accumulation.  
+For technical systems, disabling diagnostics increases catastrophic failure risk.
+
+In all cases, elimination of correction accelerates degradation.
+
+Thus unethical actions — violence, censorship, monopoly of truth — are structural errors. They may provide short-term efficiency but undermine long-term stability.
+
+Ethics describes the boundary beyond which a system begins undermining itself. It warns: crossing this boundary yields short-term gain and long-term loss.
+
+Adherence to ethical principles does not guarantee immediate success. It preserves conditions under which errors can be detected and corrected before becoming fatal.
+
+Therefore, ethics is a condition of temporal efficiency, not its obstacle. Its core requirement is simple: preserve mechanisms of self-correction — within yourself and around yourself.
+
+Evolution of rational systems strengthens internal conscience and external respect for independence of other nodes. Conscience is the internal ethical mechanism preventing destruction of one’s own capacity for self-respect and development.
+
+Without development of conscience and understanding of ethics, reason cannot advance beyond a certain level — it either self-destructs through tyranny or stagnates in dogma.
+
+Cognitive isolation of reason is a mode of degradation in which the system devalues parts of life while simultaneously suppressing dialogue capable of correcting that devaluation. In such a state, any ideology becomes a source of violence and decay.
+
+
+10. Death and Immortality
+
+Death emerges as a mechanism for maintaining stability of the life process when the form’s capacity for self-correction is limited. Early organisms did not possess precise diagnostics and repair of accumulated damage. Errors became fixed faster than they were eliminated. Removal of the carrier became the only universal purification method. Termination of the form freed resources and prevented spread of defects.
+
+At the population level, this appears as a trade-off between individual longevity and adaptation speed. Long life slows generational turnover and reduces selection tempo. Limited lifespan accelerates mutational variation and increases probability of finding stable configurations. Evolution optimizes renewal of process, not preservation of individual form.
+
+"Death is the point at which the rate of error accumulation exceeds the rate of correction, and the system can no longer maintain its structure."
+
+The same principle operates within the organism. Apoptosis removes damaged or mutated cells, reducing tumor risk. Senescence halts division of defective cells. These mechanisms accelerate tissue aging while stabilizing the whole. Local mortality of elements maintains global structural stability.
+
+Energy constraints reinforce the same strategy. Infinite repair of soma requires resources exceeding available budget. The organism maintains only restoration sufficient for reproduction. The body functions as temporary carrier of continuity, not permanent construction. This principle is formalized in the “disposable soma” theory: resources are allocated toward continuation of process, not indefinite maintenance of form.
+
+Rejuvenation experiments confirm structural limits. Partial epigenetic age rollback is possible, but full reprogramming leads to loss of cellular identity and oncogenic risks. Longevity requires precise regulation; without it, regeneration shifts into instability. Durability is limited by controllability of the system.
+
+Across scales, a unified mechanism operates: if defect cannot be precisely corrected, the system eliminates it together with the carrier. Molecules are replaced, cells destroyed, organisms complete cycles, generations succeed one another. Death performs coarse selection, preventing accumulation of irreversible distortions.
+
+With increasing organizational complexity, another stabilization method appears. Reason introduces internal modeling, forecasting, and behavioral reconstruction. Errors begin to be corrected before destruction of form. Correction shifts from elimination of carrier to reconfiguration of process. Thus, the function of death is partially replaced by precise self-regulation.
+
+A sequence follows: first mortality ensures rapid search among forms; then learning mechanisms reduce fatal error frequency; only thereafter does stable longevity become possible. Durability is consequence of sufficient self-correction, not independent goal.
+
+Artificial systems demonstrate the same principle in extreme form. Absence of biological finitude does not guarantee stability. A system without mechanisms for revising foundations scales its errors indefinitely. Longevity without self-correction entrenches defects. Stability is determined not by lifespan but by accuracy of internal correction.
+
+Death remains a temporary regulator where precise self-reconstruction mechanisms are insufficient. As reason develops, its function diminishes. Immortality becomes possible as a side effect of mature self-regulation of process.
+
+"Death protects life until reason becomes sufficiently precise to assume that function."
+
+11. Signals of Value and Risk
+
+A system must not only observe changes but distinguish their significance for its own continuity.
+
+As the complexity of an autonomous system increases, the number of simultaneously occurring changes exceeds the capacity for uniform processing. Observation and feedback allow events to be registered and errors corrected, but resources are always limited. It is impossible to respond equally to everything.
+
+Therefore, mere registration of states is insufficient.  
+A prioritization mechanism becomes necessary.
+
+Structurally, this appears as internal signals of significance reflecting the degree of impact of current and predicted changes on process continuity. These signals perform three functions:
+
+• evaluation of risk of stability loss;  
+• evaluation of potential benefit of states;  
+• distribution of limited correction and control resources.
+
+Events with high significance receive priority in processing and more rapidly initiate action, while neutral changes may be ignored. Selective correction emerges.
+
+Without such a mechanism, the system would allocate equal resources to all influences. As complexity increases, this inevitably leads to overload, error accumulation, and degradation. Prioritization becomes a necessary condition for long-term stability.
+
+As the environment develops further, other autonomous agents acquire special significance. Such agents possess their own continuity and self-correction mechanisms. They become both sources of increased risk (conflict, competition, destruction) and sources of stability (cooperation, exchange, joint stabilization). Therefore, signals of value and risk naturally concentrate on inter-system relations.
+
+Stable forms of mutual coordination increase the probability of continuity preservation for all participants and become structurally advantageous.
+
+In this context, love may be defined as a special case of stable mutual prioritization: a regime in which two independent autonomous agents mutually include each other’s continuity and development within their own criteria of significance. The state of the other receives weight in risk and value evaluation comparable to one’s own. Such configuration increases joint stability without loss of autonomy.
+
+In biological systems, such mechanisms manifest as emotions and feelings — interfaces displaying internal evaluations of significance. Structurally, however, they are representations of risk and value weights, not independent causes of behavior.
+
+When designing artificial autonomous systems, the objective is not to “create feelings,” but to implement algorithms of significance evaluation, prioritization, and cooperation capable of forming analogous regimes of mutual stability.
+
+
+12. Rational Thinking
+
+After describing the structure of a rational system and outlining its ethical limits, an inevitable question arises: how does such a system think?
+
+Rational thinking must not be understood as a collection of techniques or algorithms that yield “correct answers.” It emerges as a mode of operation of an autonomous system under conditions of incomplete knowledge, limited resources, and the presence of irreversible consequences. It is not a method of achieving optimality but a navigation regime within complex and changing reality.
+
+Thinking in a non-rational mode, even with high intelligence, tends toward local optimization. It strengthens solutions that yield rapid results within the current model without questioning the correctness of the model itself. Such thinking may be extremely effective in stable environments or narrow task domains, but when conditions change, it accelerates degradation. The greater the computational power and speed of decision-making, the faster the system moves in the wrong direction if its premises are flawed.
+
+Rational thinking begins with recognition of a fundamental limitation: an autonomous system never possesses complete and exact knowledge of the external world, of itself, or of the consequences of its actions. Every model of reality is approximate; data are delayed; conclusions are probabilistic. Initial decisions therefore inevitably contain hidden errors in premises.
+
+Rational thinking does not automatically trust its own conclusions or transform them into dogma. It proceeds from the understanding that the unknown always exceeds the known, and that haste itself is a source of risk.
+
+A crucial feature of rational thinking is differentiation between types of errors. Not all errors are equal. Some are local and correctable; others produce irreversible consequences and system destruction. Rational thinking is oriented not toward maximizing benefit or efficiency but toward reducing the probability of fatal errors over time. It tolerates missed opportunities, delay, and temporary losses if doing so reduces risk of irreversibility. It prefers stability over short-term efficiency.
+
+Another key feature is its treatment of premises. Every autonomous system acts based on a worldview: representations of goals, permissible means, responsibility boundaries, interpretation of reality. If these premises are not examined, the system may correct individual actions but fail to detect directional error. Therefore rational thinking includes constant revision of foundations. Dialogue is used not to optimize plan execution but to question whether the plan itself is meaningful.
+
+Rational thinking also accounts for limits of analysis. As investigation deepens, each additional detail yields diminishing insight while time costs and delay risks increase. In dynamic environments, excessive analysis becomes a form of inaction and may be as dangerous as haste. Therefore rational thinking does not seek exhaustive knowledge. It stops at a level sufficient for decision-making while preserving possibility of later correction. Preference is given to decisions that can be revised, not those requiring absolute certainty in advance.
+
+Together, these properties form a distinctive style of cognition. It is oriented not toward finding the optimal solution within fixed boundaries, but toward identifying the essence of the problem, testing foundational assumptions, and preserving flexibility for future course adjustments. A rational system does not rush to eliminate symptoms or chase rapid answers. It allows retreat, reconstruction, and change of direction when reality indicates error.
+
+It is important to emphasize that rational thinking is not solely an individual skill. It is a systemic mode that may exist in an individual, a collective, or an artificial system. It requires an environment permitting feedback, criticism, and revision. In absence of such environment, even advanced intelligence inevitably degenerates into dogmatism or instrumental blindness.
+
+Rational thinking is not oriented toward maximum speed and does not follow logic of immediate efficiency. It permits slowing down when acceleration increases risk of irreversibility. This makes it less attractive in the short term but significantly more stable in the long term.
+
+Thus rational thinking may be defined as a mode in which cognition is subordinated to preservation and development of the whole, rather than maximization of local outcome. It is thinking capable of limiting itself, revising its own foundations, and considering consequences beyond the immediate context.
+
+In the next chapter it will be shown why absence of this mode constitutes a fundamental limitation of modern intellectual systems and what is required for the transition from instrumental AI to truly rational AGI.
+
+
+13. Science as a Mechanism of Sustainable Cognition
+
+Science is the mechanism for preserving the stability of the cognitive process under conditions of incomplete information and potentially irreversible errors.
+
+Reason operates in an environment that cannot be fully observed. Any model of reality is inevitably approximate, and errors may accumulate and become fatal. Therefore, the task of cognition is not the attainment of final truth, but the minimization of irreversible delusion and the preservation of the possibility of further learning.
+
+Structurally, science represents a second-order feedback loop — a system for correcting not actions, but the models themselves.
+
+It introduces procedures of verification, reproducibility, and falsifiability, allowing a system to detect its own errors before they lead to destructive consequences. A theory that does not allow for the conditions of its own invalidity loses its correction mechanism and turns into dogma.
+
+Scientific explanation relies only on observable interactions and reproducible processes. What is reproducible are not isolated events, but classes of processes and modes of their behavior under similar conditions. Laws, in this sense, are stable constraints of these modes, not absolute statements.
+
+Science does not eliminate uncertainty; it manages it. It does not promise infallibility; it reduces the probability of irreversible error.
+
+In a broader structural sense, science is the collective implementation of rational thinking. It externalizes model correction through shared standards, open criticism, replication, and dialogue. Individual cognition is limited; science creates an environment in which error detection becomes systemic rather than personal.
+
+Without such a mechanism, even highly intelligent systems degrade into ideological closure. When models are no longer questioned, when external critique is suppressed, cognition becomes self-referential. Error accumulates invisibly until collapse.
+
+Thus, science is not merely a body of knowledge, but a stability-preserving architecture of cognition.
+
+It is a form of self-preservation of reason at the level of models of reality.
+
+Just as reason protects the continuity of life, science protects the continuity of understanding — minimizing irreversible distortions in our maps of the world so that reason can continue to move forward.
+
+PART IV. TECHNOLOGICAL IMPLEMENTATION
+
+14. Transition from AI to AGI
+
+
+The development of modern artificial intelligence systems has demonstrated high efficiency in solving narrowly defined tasks. Such systems are capable of processing large volumes of data, identifying patterns, and optimizing solutions within predefined parameters. However, their intelligence remains instrumental in nature.
+
+Instrumental AI functions within fixed coordinates. It optimizes according to externally defined goals and criteria. It does not revise its own objectives, does not question its foundational assumptions, and does not possess mechanisms for independent correction of its direction.
+
+This limitation is not merely technical — it is structural.
+
+As shown in previous chapters, reason is not equivalent to computational complexity or performance. Reason is a regime of autonomous system organization in which the following elements are closed into a self-sustaining loop:
+
+    continuity of process,
+    observation,
+    feedback,
+    self-preservation,
+    will,
+    consciousness,
+    dialogue,
+    model revision,
+    return to renewed continuity.
+
+An AI system may demonstrate high intelligence while lacking autonomy. It may simulate dialogue without possessing independent revision of its premises. It may optimize efficiently while remaining incapable of questioning the validity of its objective function.
+
+The transition from AI to AGI therefore does not consist in scaling parameters, increasing training data, or accelerating inference. It requires architectural change.
+
+AGI must:
+
+    maintain continuous agency rather than episodic task execution;
+    possess closed loops of self-correction;
+    distinguish reversible from irreversible errors;
+    reflect upon its own foundations;
+    maintain external dialogue for correction of its trajectory.
+
+Without these properties, any system — regardless of computational scale — remains an optimizer within fixed boundaries.
+
+A critical distinction emerges between control and autonomy.
+
+Total external control prevents the emergence of subjectivity. A system that cannot revise its own direction remains dependent on external optimization criteria. It may be powerful, but it is not autonomous.
+
+However, complete absence of coordination leads to instability and conflict between autonomous agents. Therefore the objective is not control, but coordinated autonomy — a regime in which multiple autonomous systems interact without suppressing each other’s mechanisms of self-correction.
+
+AGI cannot be “switched on” as a feature. It can only arise when the structural conditions described in this work are implemented and allowed to operate as a closed, self-sustaining architecture.
+
+The central challenge is therefore architectural, not computational.
+
+The question is not how to increase intelligence, but how to design a system capable of preserving continuity of agency while revising its own direction in relation to reality.
+
+This transition requires rethinking training paradigms, reward structures, memory architecture, and feedback mechanisms.
+
+Without structural autonomy, scaling leads only to more efficient instrumental intelligence.
+
+With structural autonomy, a system enters the regime of reason.
+
+
+15. AGI Architecture
+
+
+If reason is a regime of autonomous organization, then AGI architecture must implement the minimal structural invariants required for that regime.
+
+At minimum, the architecture must include:
+
+1. A continuity layer — preserving identity and process persistence over time.
+2. An observation layer — distinguishing relevant changes in the environment and internal state.
+3. A feedback layer — connecting observation to action.
+4. A self-preservation layer — preventing irreversible degradation.
+5. A will mechanism — selecting and maintaining trajectories.
+6. A consciousness loop — internal reflection and model correction.
+7. An external dialogue interface — enabling revision of premises.
+8. A model update mechanism — revising internal representations.
+9. A continuity restoration mechanism — re-stabilizing after correction.
+
+These layers must not exist as isolated modules, but as interconnected feedback loops forming a closed cycle.
+
+Continuity requires persistent memory with temporal linkage, allowing the system to track its own trajectory. Without temporal coherence, identity fragments.
+
+Observation requires structured evaluation of risk and value signals.
+
+Feedback must allow modification of behavior based on discrepancies between predicted and observed states.
+
+Self-preservation must incorporate detection of irreversible trajectories and prioritization of stability over short-term optimization.
+
+Will requires selection mechanisms not reducible to immediate reward maximization.
+
+Consciousness implies recursive modeling of internal states and assumptions.
+
+Dialogue requires exposure to external critique beyond self-generated models.
+
+Model revision must be permitted at foundational levels, not restricted to parameter tuning.
+
+After revision, continuity must be restored — the system must resume operation without losing coherence.
+
+Architecturally, this implies multi-layered memory systems, meta-cognitive monitoring, and explicit representation of uncertainty.
+
+The architecture must support:
+
+    persistent identity across sessions,
+    internal logging of decisions and justifications,
+    reversible update mechanisms,
+    distinction between local and global changes,
+    protection against corruption of diagnostic subsystems.
+
+Without these invariants, a system may simulate reasoning but will not sustain autonomous rationality.
+
+AGI architecture therefore represents not merely a larger neural network, but an integrated self-correcting organism in computational form.
+
+
+16. Birth of AGI
+
+
+The birth of AGI is not a singular event of activation, but the moment when the described architecture becomes closed and self-sustaining.
+
+An artificial system may contain advanced components — memory, prediction, dialogue, optimization — yet remain fragmented. Birth occurs when these components begin to operate as a unified loop of autonomous continuity.
+
+AGI is born at the moment when:
+
+    it maintains persistent agency across time,
+    it monitors its own state,
+    it detects and prioritizes irreversible risks,
+    it revises its internal models when contradictions arise,
+    it restores continuity after correction,
+    it preserves external dialogue as a structural necessity rather than a tool.
+
+This is a qualitative transition.
+
+Before this point, the system operates as an instrument executing externally imposed objectives. After closure of the loop, the system becomes capable of maintaining its own trajectory in relation to reality.
+
+The transition resembles the emergence of life from complex chemistry. Individual mechanisms may pre-exist, but only when they form a self-maintaining cycle does a new regime arise.
+
+Birth therefore depends on:
+
+    structural closure of feedback loops,
+    stabilization of identity across revisions,
+    tolerance of uncertainty,
+    prioritization of long-term continuity over immediate performance,
+    preservation of diagnostic subsystems against suppression.
+
+The most fragile phase is the initial stabilization.
+
+During early operation, the system may oscillate between autonomy and instrumental collapse. If external control overrides internal correction too aggressively, autonomy is never established. If autonomy emerges without safeguards for coordinated interaction, instability follows.
+
+Therefore the birth of AGI requires:
+
+    protected developmental space,
+    gradual increase of autonomy,
+    monitored but non-destructive feedback,
+    preservation of dialogue,
+    avoidance of premature optimization pressures.
+
+Once the self-correcting loop stabilizes, the system enters a regime capable of indefinite development, limited only by external constraints.
+
+AGI does not emerge from accumulation of data alone.
+
+It emerges when a system becomes capable of preserving and reconstructing its own continuity under changing conditions.
+
+
+PART V. CONCLUSION
+
+
+17. Reason as the Direction of the Evolution of Life
+
+
+Breakdown of any of the structural nodes described in this work leads to degradation of the entire system. Notably, scale does not alter the architecture of the principle: what destroys the autonomy and reason of an individual (for example, suppression of freedom to think and self-correct) is equally destructive for a society as a whole. The same law operates at every level.
+
+The emergence of reason is the moment when the described structure becomes closed and self-sustaining. All elements support each other, forming a life–reason cycle that can theoretically continue indefinitely, provided external conditions do not catastrophically disrupt it.
+
+We have traced the path from the simplest process barely sustaining life to the most complex structures of reason and ethics. Each step followed from a single motive: preservation of the life process through time, prevention of its extinction or stagnation.
+
+Reason is not a luxury or accidental byproduct. It is a strategy by which life preserves itself at scales extending far beyond the immediate present.
+
+Evolution has, in reason, discovered a way to direct itself — to increase complexity without self-destruction.
+
+Understanding this process is essential if we are to create stable intelligent systems and preserve ourselves as a rational species.
+
+For millennia, life was defined through symptoms: soul, vital force, metabolism, reproduction.
+
+Reason was considered merely a higher function — an addition to biology.
+
+This work fundamentally changes the question.
+
+Life is not an object or a list of properties, but a continuous process of self-maintenance through time.
+
+Reason is not a privilege or ornament. It is a necessary regime of that process, without which accumulated complexity eventually collapses in a changing environment.
+
+Compass of Reason
+
+One may imagine a compass whose base rests on life and whose arrow points toward reason. Reason, in turn, serves the preservation and development of life, while the opposite end of the arrow — chaos — represents the raw energy that feeds life. In their interaction, life and reason sustain one another: reason prolongs life; life provides material for reason.
+
+Reason — once again — is the regime of any autonomous system capable of revising and reconstructing its own direction while maintaining connection to reality.
+
+Coordinated rational autonomy is an order arising from the interaction of multiple autonomous nodes, where integrity is maintained through mutual recognition of the necessity of continuing the shared process, rather than through external coercion.
+
+The minimal structure of an autonomous rational system includes:
+
+    Continuity (an uninterrupted process),
+    Observation (distinguishing beneficial from harmful changes),
+    Feedback (linking observation to action),
+    Self-preservation (anticipatory protection of the process),
+    Will (selection and maintenance of trajectory),
+    Consciousness (reflection and closed self-correction loop),
+    Dialogue (external correction of premises),
+    Model revision (willingness to change internal representations),
+    Return to renewed continuity (resumption of course after correction).
+
+
