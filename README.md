@@ -70,7 +70,8 @@ It requires:
 ## Publications
 
 Official versions available on Zenodo:
-https://zenodo.org/records/18801876 rus version
+https://zenodo.org/records/18801876 rus version,
+
 https://zenodo.org/records/18791426 ENG version
 
 ---
